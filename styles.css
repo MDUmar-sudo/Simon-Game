@@ -57,3 +57,77 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+  }
+  .btn {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-width: 6px;
+  }
+  #level-title {
+    font-size: 1.5rem;
+    margin: 10% 0 5% 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+  .btn {
+    width: 150px;
+    height: 150px;
+    margin: 18px;
+    border-width: 8px;
+  }
+  #level-title {
+    font-size: 2.2rem;
+    margin: 8% 0 4% 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .container {
+    width: 60%;
+  }
+  .btn {
+    width: 180px;
+    height: 180px;
+    margin: 22px;
+    border-width: 10px;
+  }
+  #level-title {
+    font-size: 2.8rem;
+    margin: 6% 0 3% 0;
+  }
+}
+
+@media (min-width: 1921px) {
+  .container {
+    width: 40%;
+  }
+  .btn {
+    width: 300px;
+    height: 300px;
+    margin: 35px;
+    border-width: 16px;
+  }
+  #level-title {
+    font-size: 4rem;
+    margin: 4% 0 2% 0;
+  }
+}
+
+/* Ensure buttons are always square */
+.btn {
+  aspect-ratio: 1 / 1;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+/* ...existing code... */
